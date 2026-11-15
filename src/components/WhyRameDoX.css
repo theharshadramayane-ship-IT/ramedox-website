@@ -42,7 +42,7 @@
 .why-image {
   height: 100%;
   min-height: 450px;
-  background: url('/hero-bg.jpg') center/cover;
+  background: linear-gradient(rgba(10, 18, 38, 0.4), rgba(10, 18, 38, 0.6)), url('/hero-bg.jpg') center/cover;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
