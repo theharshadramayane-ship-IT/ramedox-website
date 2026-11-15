@@ -1,0 +1,44 @@
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.industry-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-top: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  border-top-color: var(--orange);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.icon-box {
+  color: var(--orange);
+  margin-bottom: 20px;
+  background: rgba(242, 107, 33, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.industry-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--navy-900);
+}
+
+.industry-card p {
+  color: var(--steel-500);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

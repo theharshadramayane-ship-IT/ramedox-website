@@ -1,0 +1,78 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(10, 18, 38, 0.95);
+  padding: 15px 5%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  background: var(--white); /* White circle behind the logo if it's transparent */
+  padding: 2px;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+.nav-btn {
+  background: var(--orange);
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.nav-btn:hover {
+  background: var(--red) !important;
+  color: var(--white) !important;
+}
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+}

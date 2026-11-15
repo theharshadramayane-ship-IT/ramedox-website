@@ -1,0 +1,43 @@
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.cap-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.cap-item:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--orange);
+  transform: translateX(5px);
+}
+
+.cap-num {
+  font-family: var(--font-heading);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  min-width: 35px;
+}
+
+.cap-text {
+  font-weight: 500;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .cap-grid { grid-template-columns: 1fr; }
+}
