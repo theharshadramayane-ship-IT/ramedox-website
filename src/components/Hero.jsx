@@ -6,7 +6,8 @@ export default function Hero() {
     <section 
       className="hero" 
       style={{ 
-        backgroundImage: `linear-gradient(rgba(10, 18, 38, 0.85), rgba(10, 18, 38, 0.95)), url('/hero-bg.jpg')` 
+        backgroundImage: `linear-gradient(rgba(10, 18, 38, 0.5), rgba(10, 18, 38, 0.7)), url('/hero-bg.jpg')` 
+        
       }}
     >
       <div className="hero-content">
